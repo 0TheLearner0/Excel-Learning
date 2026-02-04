@@ -1,0 +1,64 @@
+1. What is a cell address/reference in Excel?
+	Unique name of a cell. like A1,A2,....,etc.
+	A represents the Column and 1 is the row number.
+
+2. What do you mean by Relative cell referencing and Absolute cell referencing in MS Excel?
+	Relative cell reference is a cell address that changes automatically, When we copy a formula to another cell. if you copy a fromul from A3 to B3 and the formula is =A1+A2. So in B3 automatically this formula will be B1+B2
+#Excel adjust the reference relative to the new position.
+	Absolute cell reference means a cell reference that doesn NOT change.When you copy or drag aformula to another cell. To achieve this we use $ sign. E.g:$A$1
+
+3. How do you freeze panes in Excel?
+	Freeze Panes allow row or column to visible while you scroll through the rest of the sheet.
+Why do we freeze panes?
+Ans: To always see column headings, avoid confusion in large datasets, it makes data analysis easier.
+	Select row>> Click on view >> Freeze panes
+
+
+
+
+4. How can you restrict someone from copying a cell from your worksheet?
+	by using Protect Sheet option.
+	Review >> Protection >> Manage protection >> Protect sheet || Range >> A:D(from A to D is editable)
+	*Locked cell cannot be copied or edited.
+	* Only allowed cell can be changed and for that we use range.
+Note: Excel protection for control not security. It prevents accidental or casual copying.
+Protect Workbook means protecting sheet structure, Doesn't protect cell data.
+
+6. Mention the order of operations used in Excel while evaluating formulas.
+	Excel follows a fixed rule called 'Operator Precedence'.
+	The Order is
+		1.Parentheses "()": Operations inside brackets are done first.
+		2.Exponents "^": 2^3=8
+		3.Multiplication(*) & Division(/):Evaluate left to right.
+		4.Addition(+) & Substraction(-): Evaluate left to right.  
+
+8. What is the difference between count, counta, and countblank?
+	COUNT:Counts only numeric values(Numbers,Dates,Time Values).
+		Formula: =COUNT(range) e.g.: =COUNT(A1:A4)
+	COUNTA: Counts all non-empty cells(Num, Text, Dates, 	Formulas(even if results is empty text "")).
+		Formula: =COUNTA(range)
+	COUNTBLANK: Counts only empty cells. It could be truly blank cells, 			Cell with formulas returning empty text("")
+		Formula: =COUNTBLANK(range)
+
+
+9. What is the shortcut to add a filter to a table?
+	Shortcut to add a Filter in Excel is Ctrl+SHIft+L	What this shortcut does: * Adds filter drop-down 	arrows to the header row. *If filters are already 	applied, it removes them(toggle)
+	>> Why do we need the filter?
+	Filters are used to display only required data from 	a large dataset, making analysis faster and easier 	without changing the original data.
+
+
+10. What is the use of VLOOKUP and how do we use it?
+	
+
+
+14. How is VLOOKUP different from the LOOKUP function?
+15. How many report formats are available in Excel?
+16. How does the IF() function in Excel work?
+17. How do we use the SUMIF() function in Excel?
+19. What is a Pivot Table?
+26. What are the wildcards available in Excel?
+27. What is Data Validation? Illustrate with an example.
+30. How are nested IF statements used in Excel?
+37. How does a Slicer work in Excel?
+41. What is the What-If Analysis in Excel?
+44. How will you pass arguments to VBA Function?
