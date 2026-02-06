@@ -1,0 +1,76 @@
+Power BI
+
+Who has developed the Power BI?
+Microsoft
+
+What are the main compenents of the Power BI are?
+ There are three main components of Power BI are Desktop, Service, and Mobile.
+		Create in Desktop → Publish to Service → View on Mobile
+
+What is the file extension of Power BI is?
+ .pbix
+
+
+Which lanuguage is used for Calculations in Power BI?
+	DAX.
+
+Which language is used in power query?
+	M language
+
+Which model is recommended in Power BI?
+	The Star Schema is recommended in Power BI because it optimizes performance and usability.
+
+Types of relationship in Power BI:
+	One-to-One, One-to-Many and Many-to-One.
+
+Which visual is used to show trends over time?
+	 Line charts are the most common visualization for showing trends over time in Power BI.
+
+Which visual is used to show part-to-whole relationships?
+	Pie Chart visuals for showing part-to-whole relationships in Power BI.
+
+Slicer is used for what?
+	Slicer is used for filtering data.
+
+Which function is used to calculate data?
+	SUM() function is used to calculate data.
+
+Which function is used to change filter context?
+	CALCULATE() function is used to change filter context.
+
+
+Which is used for publishing reports?
+	Power BI Service is used for publishing reports.
+
+Where do we create the Dashboard in Power BI?
+	We create Dashboard in Power BI Service.
+
+Which is used for connecting on-premise data to cloud?
+	Gateway is used for that.
+
+Why do we use the RLS(Row Level Security)?
+	RLS is used for data security.
+
+Which is used to Refresh only new data?
+	Incremental refresh is used.
+
+Power Query tool is used for ETL in Power BI.
+
+* A Data Model is the structure of tables and relationships used to analyze data in Power BI.
+
+* Star Schema is a data modelling technique where a central fact table is connected to multiple dimension tables.
+
+* A Dashboard is a single page view of key metrics created in Power BI Service.
+
+* A Slicer is a visual filter used to filter data interactively.
+
+* CALCULATE() function modifies filter context and perform calculations in DAX.
+
+* 
+
+
+
+
+
+
+
