@@ -66,7 +66,53 @@ Power Query tool is used for ETL in Power BI.
 
 * CALCULATE() function modifies filter context and perform calculations in DAX.
 
-* 
+* RLS(Row Level Security) restricts data access for users based on roles.
+
+* A Gateway connects on-premise data sources to power BI service.
+
+* Incremental refresh updates only new or changed data instead of refreshing the entire dataset.
+
+* KPIs(Key Performance Indicators) measure business performance like sales, profit, growth.
+
+* DAX: Data Analysis Expressions.
+
+* DAX is used in Power BI.
+
+* DAX is a type of formula.
+
+* DAX works on data.
+
+* DAX is executed at runtime.
+
+* SUM() function to calculate data.
+
+* AVERAGE() function to find the Average value.
+
+* COUNT() function to count rows. 
+
+* COUNTA() function to count non-blanks value.
+
+* MAX() function is to find Maximum value.
+
+* MIN() function is to find the Minimum val.
+
+* There are two types of Context Rows and Filter in Power BI.
+
+* Row context that applies to each row.
+
+* Filter context that applies to filters.
+
+* We use CALCULATE() function to modify context.
+
+* SELECTEDVALUE() function used to return selected value.
+
+* FILTER() function used to filter a table.
+
+* ALL() function used to remove filters.
+
+* ALLEXCEPT() function used to keep filters.
+
+* SUMMARIZE() function used to create virtual table.
 
 
 
