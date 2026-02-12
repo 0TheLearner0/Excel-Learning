@@ -46,19 +46,219 @@ Protect Workbook means protecting sheet structure, Doesn't protect cell data.
 	>> Why do we need the filter?
 	Filters are used to display only required data from 	a large dataset, making analysis faster and easier 	without changing the original data.
 
-
+========================================================
 10. What is the use of VLOOKUP and how do we use it?
+
+	VLOOKUP is used to find data from a table and return a related value.
 	
+	=VLOOKUP(lookup_value, table_array, col_index_num, FALSE)
+	lookup_value → What you are searching for
 
+	table_array → Where Excel should search
 
+	col_index_num → Which column’s value you want
+
+	FALSE → Exact match (important!)
+	
+=VLOOKUP(102, A2:C5, 3, FALSE)
+	Looks for 102
+✔ 	Searches in column A
+✔ 	Returns value from column 3 (Salary)
+
+Important points to remember
+
+	VLOOKUP searches from top to bottom
+
+	It works left to right only
+
+	Use FALSE for correct results
+
+	Data doesn’t need to be sorted (when FALSE)
+
+===================================================
+	
 14. How is VLOOKUP different from the LOOKUP function?
+
+LOOKUP is a basic and old function.
+
+	Searches for a value in one row or one column
+
+	Data must be sorted
+
+	Limited control
+
+	Rarely used in real work
+
+VLOOKUP is a more advanced and widely used function.
+
+	Searches vertically (top to bottom)
+
+	Works with unsorted data (using FALSE)
+
+	Can return data from any column to the right
+
+	Used heavily in offices
+
+LOOKUP requires sorted data and has limited use, while VLOOKUP is more flexible and widely used for vertical searches.
+===================================================================
 15. How many report formats are available in Excel?
+	There are 3 report formats in Excel: Compact, Outline, and Tabular.
+
+✅ Report Formats in Excel (Pivot Table)
+1️⃣ Compact Form
+
+Default format
+
+All row fields are shown in one column
+
+Saves space
+
+👉 Most commonly used by default
+
+2️⃣ Outline Form
+
+Each field appears in a separate column
+
+Shows hierarchy clearly
+
+Easier to read than Compact
+
+3️⃣ Tabular Form
+
+Data looks like a normal table
+
+Each field has its own column
+
+Best for printing and further analysis
+
+===============================================================
 16. How does the IF() function in Excel work?
+	The IF() function checks a condition and returns one value if TRUE and another if FALSE.
+=IF(A1 >= 40, "Pass", "Fail")
+
+==============================================================
 17. How do we use the SUMIF() function in Excel?
+	SUMIF() is used to add numbers only when a specific condition is met.
+
+=SUMIF(range, criteria, [sum_range])
+Meaning:
+
+range → Where the condition is checked
+
+criteria → The condition
+
+sum_range → What values to add (optional)
+
+==========================================================
 19. What is a Pivot Table?
+	It turns raw data into useful summaries without writing formulas.
+
+========================================================
 26. What are the wildcards available in Excel?
+	Excel has three wildcards: asterisk (*), question mark (?), and tilde (~).
+
+1️⃣ Asterisk *
+
+Represents any number of characters (including zero)
+
+Example:
+
+A* → matches Apple, Account, Alex
+
+*ing → matches Running, Coding
+
+2️⃣ Question Mark ?
+
+Represents exactly one character
+
+Example:
+
+T?t → matches Test, Text
+
+A?C → matches ABC, ADC
+
+3️⃣ Tilde ~
+
+Used to escape wildcards (treat them as normal characters)
+
+Example:
+
+~* → finds an actual *
+
+~? → finds an actual ?
+
+=================================================================
 27. What is Data Validation? Illustrate with an example.
+
+Data Validation is used to control what type of data a user can enter into a cell.
+it prevents wrong data from being entered.
+
+Simple example (Dropdown list)
+Suppose you want only these departments:
+
+IT
+
+HR
+
+Finance
+
+Steps:
+
+Select the cell (say A1)
+
+Go to Data → Data Validation
+
+In Allow, choose List
+
+In Source, type:
+
+IT,HR,Finance
+
+
+Click OK
+
+✅ Now the cell shows a dropdown.
+❌ You cannot type any other value.
+
+
+==========================================================
 30. How are nested IF statements used in Excel?
+	=IF(condition1, result1,
+    IF(condition2, result2,
+       IF(condition3, result3, result_if_all_false)))
+
+
+
+============================================================
 37. How does a Slicer work in Excel?
+	A Slicer in Excel is a visual filtering tool that lets you filter data with one click.
+
+What does a Slicer do?
+
+Filters Pivot Tables
+Filters Excel Tables
+Shows which data is selected
+Makes reports interactive
+
+
+How to use a Slicer (step by step)
+
+Click inside a Pivot Table or Table
+
+Go to Insert → Slicer
+
+Select the column you want to filter (e.g., Department)
+
+Click OK
+
+✅ A slicer box appears with buttons.
+================================================================
 41. What is the What-If Analysis in Excel?
+What-If Analysis is used to see how changing one or more values affects the final result.
+
+===================================================================
 44. How will you pass arguments to VBA Function?
+Function AddNumbers(a As Integer, b As Integer) As Integer
+    AddNumbers = a + b
+End Function
+
