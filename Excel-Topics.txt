@@ -231,7 +231,7 @@ Click OK
 
 ============================================================
 37. How does a Slicer work in Excel?
-	A Slicer in Excel is a visual filtering tool that lets you filter data with one click.
+   	A Slicer in Excel is a visual filtering tool that lets you filter data with one click.
 
 What does a Slicer do?
 
@@ -262,3 +262,51 @@ Function AddNumbers(a As Integer, b As Integer) As Integer
     AddNumbers = a + b
 End Function
 
+
+
+=============================================================================
+
+IF() function: Tests a condition and returns one value if the condition is TRUE. And another value if it's 		FALSE.
+	=IF(A1>80, "Excellent","Average")
+	
+Using IF() with Other Functions:--------------
+	IF() with AND(): Check if both conditions are TRUE.
+		=IF(AND(A1>18, B1="MALE"), "Enter","No Entry")
+		=IF(AND(Condition1, Condition2), "Result_If both conditions are true","Result of Else")
+	IF() with OR(): Check if anyone condition is TRUE.
+		=IF(OR(Condition1, Condition2),"If_Result","Else_Result")
+	IF() with ISBLANK(): Check if the cell is empty then display a message
+		=IF(ISBLANK(A2),"No Data", A2)
+
+Text Concatenation with IF()
+	=IF(A2>100,"High: " & A2,"Normal: " & A2)
+		Result: If A2=150 >> "High: 150"
+			If A2=75 >> "Normal: 75"
+========================================================================
+IFS() function: Test multiple conditions and returns the first TRUE result.
+	Maximum condition we can put into the IFS() function is 127.
+		=IFS(A1>=95,"Excellent", A1>=85,"Best", A1>=65,"Good", TRUE,"Average")
+ In order to prevent error use "Catch-All" TRUE in the end.
+
+IFS() with Other Functions:------------
+	IFS() with AND(): All conditions should be TRUE.
+		
+		=IFS(AND(A1>18, B1="YES"),"Eligible",
+			AND(A1>=18, B1="NO"),"Not Eligible- No License",
+			TRUE, "Not-Eligible-Too-Young"
+			)
+	
+	IFS() with WEEKDAY():
+		=IFS(WEEKDAY(A2)=1,"Sunday-Closed",
+		WEEKDAY(A2)=7,"SAT-Closed",
+		TRUE,"OPEN")
+
+	IFS() with Text functions:
+		=IFS(LEFT(A2,1)="A", "Aisle A-Electronics",
+			LEFT(A2,1)="B", "Aisle B-Groceries",
+			LEFT(A2,1)="C", "Aisle C-Clothing",
+			TRUE, "Unknown Aisle")
+
+NOTE: * Don't forget to "Catch-All" TRUE to prevent Error.
+	Always start with the most restrictive  condition first then least restrictive.
+	For more than 5-6 conditions, consider using a lookup table instead.
